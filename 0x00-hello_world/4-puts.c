@@ -1,7 +1,15 @@
-#!/bin/bash               
 #include <stdio.h>
-int main(void){
 
-	puts(" \ "Programming is like building a multilingual puzzle");
+/**
+ * main - Entry point
+ *
+ * Return: Ending with a value of 0
+ */
+int main(void)
+{
+	char Multi[] = "\"Programming is like building a multilingual puzzle\n";
 
-	return (0); }
+	puts(Multi);
+
+	return (0);
+}

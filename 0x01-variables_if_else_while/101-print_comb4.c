@@ -3,41 +3,33 @@
 
 /**
  * main - Entry point
- *
- * Description: Prints out numbers
+ * Description: prints all possible different combinations of three digits
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-int u;
-int a = 0;
+int a, b, c;
 
-while (a < 10)
+for (a = 48; a < 58; a++)
 {
-u = 0;
-while (u < 10)
+for (b = 49; b < 58; b++)
 {
-i = 0;
-while (i < 10)
+for (c = 50; c < 58; c++)
 {
-if (i != u && u != a && a < u && u < i)
+if (c > b && b > a)
 {
-putchar('0' + a);
-putchar('0' + u);
-putchar('0' + i);
-if (i + u + a != 9 + 8 + 7)
+putchar(a);
+putchar(b);
+putchar(c);
+if (a != 55 || b != 56)
 {
 putchar(',');
 putchar(' ');
 }
 }
-i++;
-}
-u++;
 }
 }
-a++;
+}
 putchar('\n');
 return (0);
 }

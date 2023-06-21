@@ -17,7 +17,7 @@ int main(void)
 	{
 		if ((p % 3) == 0)
 		{
-			sum3 = sum3 + i;
+			sum3 = sum3 + p;
 		} else if ((p % 5) == 0)
 		{
 			sum5 = sum5 + p;

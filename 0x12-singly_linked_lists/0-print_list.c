@@ -2,7 +2,7 @@
 
 /**
  * print_list - print all members of the lsit
- * @h: poionts to node
+ * @h: points to node
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)

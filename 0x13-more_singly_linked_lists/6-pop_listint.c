@@ -6,13 +6,14 @@
  * Return: head node data
  */
 int pop_listint(listint_t **head)
-{	
+{
 	listint_t *temp = *head;
 
 	if (head == NULL || *head == NULL)
 	return;
 	int n = temp->n;
 	*head = (*head)->next;
-	free (temp);
+	free(temp);
+	temp = NULL;
 	return (n);
 }

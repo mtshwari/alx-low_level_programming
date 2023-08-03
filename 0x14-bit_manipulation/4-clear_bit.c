@@ -8,18 +8,17 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int count = 0;
+	unsigned long int i;
+	unsigned int hold;
 
-	while (num)
-	{
-		count += (num & 1);
-		num >>= 1;
-	}
-	return (count);
-}
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
-{
-	unsigned long int xor_result = n ^ m;
+	if (index > 64)
+		return (-1);
+	hold = index;
+	for (i = 1; hold > 0; i *= 2, hold--)
+		;
 
-	return (count_set_bits(xor_result));
+if ((*n >> index) & 1)
+		*n -= i;
+
+	return (1);
 }

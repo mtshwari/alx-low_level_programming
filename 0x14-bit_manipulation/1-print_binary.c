@@ -7,20 +7,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	int size = sizeof(n) * 8;
-	int shift = size - 1;
-	int i;
+	unsigned long int i;
+	int shifts;
 
-for (i = 0; i < size; i++)
-{
-if ((n & (1UL << shift)) != 0)
-{
-_putchar('1');
-}
-else
-{
-_putchar('0');
-}
-shift--;
-}
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+
+	for (i = n, shifts = 0; (i >>= 1) > 0; shifts++);
+
+	for (; shifts >= 0; shifts--)
+	{
+		if ((n >> shifts) & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }

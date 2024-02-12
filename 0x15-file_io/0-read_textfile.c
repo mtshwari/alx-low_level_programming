@@ -1,6 +1,11 @@
 #include "main.h"
 #include <unistd.h>
 #include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 /**
  * read_textfile - returns the actual number of letters it could read and print

@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+gc -fPIC -c *.c
 gcc -shared -o liball.so libdynamic.o

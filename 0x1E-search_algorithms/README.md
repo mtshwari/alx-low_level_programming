@@ -1,6 +1,6 @@
 # Search Algorithms
 
-In thi project algorithms,I implemented various types of search algorithms
+In this project algorithms,I implemented various types of search algorithms
 and with their corresponding space/time complexities.
 
 ## Tests
